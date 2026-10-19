@@ -43,7 +43,9 @@ export function NotifyForm({
     }
     setError(undefined);
     setState("sending");
-    const res = await submitNotify(values);
+    // A network failure throws instead of returning a result; treat it as an
+    // error so the visitor sees a message instead of nothing.
+    const res = await submitNotify(values).catch(() => ({ ok: false, error: "server" }) as const);
     if (res.ok) {
       setState("done");
     } else {

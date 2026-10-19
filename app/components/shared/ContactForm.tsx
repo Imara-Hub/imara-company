@@ -85,7 +85,9 @@ export function ContactForm({
   }, [setValue]);
 
   async function onSubmit(values: ContactInput) {
-    const res = await submitContact(values);
+    // A network failure (or a page left open across a deploy) throws instead
+    // of returning a result; show the error message rather than nothing.
+    const res = await submitContact(values).catch(() => ({ ok: false, error: "server" }) as const);
     if (res.ok) {
       reset({ ...values, name: "", email: "", message: "" });
       setStatus("success");
@@ -117,7 +119,14 @@ export function ContactForm({
 
   return (
     <Stack asChild position="relative" gap="5">
-      <form onSubmit={handleSubmit(onSubmit)} noValidate>
+      <form
+        // Errors on the hidden spam fields have no message next to them, so
+        // without this the button would just do nothing.
+        onSubmit={handleSubmit(onSubmit, (errs) => {
+          if (errs.website || errs.startedAt) setStatus("error");
+        })}
+        noValidate
+      >
         {(status === "error" || status === "rateLimited") && (
           <Alert.Root status="error" borderRadius="l3" role="alert">
             <Alert.Indicator />
