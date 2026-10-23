@@ -12,7 +12,8 @@ phones running with friendly help-desk support.
 
 ## What's on the site
 
-**Products**
+## **Products**
+
 - **Afya Sync** (coming soon, Android & iOS): a daily health companion. Water,
   steps, sleep, weight & BMI, mood and energy check-ins, cycle tracking,
   blood pressure, sugar and pulse, weekly insights and streaks, in English,
@@ -36,7 +37,8 @@ Training & coding classes.
 shipment tracking, with "notify me" sign-ups) · About (story, values, team) ·
 Contact · Blog · Privacy, Terms and Cookies.
 
-**Features**
+## **Features**
+
 - English and French on every page (`/en/…`, `/fr/…`), chosen from the
   visitor's browser language or saved choice.
 - Contact, quote and order forms that email the team (via Resend) and send the
@@ -71,7 +73,6 @@ emails are printed in the terminal instead of being sent.
 Everything lives in `app/`. **A folder with a `page.tsx` is a page on the site**;
 folders without one (components, data, lib…) are just code.
 
-```
 app/
 ├── [lang]/                   ← every page, once per language: /en/… and /fr/…
 │   ├── layout.tsx            ← wraps every page: navbar, footer, fonts, theme
@@ -103,12 +104,12 @@ app/
 └── sitemap.ts  robots.ts  icon.png
 
 proxy.ts                      ← sends "/" to /en or /fr
-```
 
 Files outside `app/` are config that Next.js requires at the root
 (`package.json`, `next.config.ts`, `tsconfig.json`) plus `public/` for static files.
 
 ## Adding a page
+
 1. Create `app/[lang]/<name>/page.tsx` (copy `app/[lang]/blog/page.tsx` as a starting point).
 2. Add its text to both dictionaries (`app/i18n/dictionaries/en.ts` and `fr.ts`).
 3. Add it to `routes` in `app/data/site.ts`. The sitemap picks it up automatically.
