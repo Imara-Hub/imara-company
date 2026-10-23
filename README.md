@@ -22,7 +22,7 @@ app/
 │   ├── page.tsx              ← Home                       /en  /fr
 │   ├── not-found.tsx         ← 404 page
 │   ├── products/
-│   │   ├── page.tsx          ← Products (Imara Afya featured)
+│   │   ├── page.tsx          ← Products (Afya Sync featured)
 │   │   ├── duka-pos/         ← Duka POS
 │   │   ├── school/           ← School Management System
 │   │   └── imara-pay/        ← Imara Pay + order form

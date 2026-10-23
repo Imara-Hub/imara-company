@@ -7,10 +7,10 @@ import { NotifyForm } from "@/components/shared/NotifyForm";
 import { getI18n } from "@/i18n/server";
 
 /**
- * Imara Afya Band showcase (above the Imara Afya card on the homepage and Products page): the floating watch
+ * Afya Sync Band showcase (above the Afya Sync card on the homepage and Products page): the floating watch
  * mockup with "Coming soon", a short description and a notify sign-up.
- * The band belongs to Imara Afya, so a chip and a connector link it to the
- * Imara Afya app card that follows (#imara-afya).
+ * The band belongs to Afya Sync, so a chip and a connector link it to the
+ * Afya Sync app card that follows (#imara-afya).
  */
 export async function BandShowcase({ headingAs = "h2" }: { headingAs?: "h2" | "h3" }) {
   const { t } = await getI18n();
@@ -110,7 +110,7 @@ function AfyaLogo({ size }: { size: string }) {
   );
 }
 
-/** "Part of Imara Afya" chip, in Imara Afya's green. */
+/** "Part of Afya Sync" chip, in Afya Sync's green. */
 function AfyaChip({ label }: { label: string }) {
   return (
     <HStack

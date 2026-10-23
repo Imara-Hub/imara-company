@@ -78,7 +78,7 @@ function Badge({
 }
 
 /**
- * Google Play + App Store badges for Imara Afya. Before launch they read
+ * Google Play + App Store badges for Afya Sync. Before launch they read
  * "Coming soon on…" and aren't clickable; after launch (`afyaStores.launched`
  * in data/site.ts) they link to the stores.
  */

@@ -12,14 +12,14 @@ export type Product = {
   tagline: string;
   short: string;
   meta: string;
-  /** Page on this site. Imara Afya has none: it's featured on its own. */
+  /** Page on this site. Afya Sync has none: it's featured on its own. */
   href?: string;
   /** Shown as a highlighted badge on the card. */
   status?: string;
 };
 
 const base: { id: ProductId; name: string; href?: string; soon?: boolean }[] = [
-  { id: "afya", name: "Imara Afya", soon: true },
+  { id: "afya", name: "Afya Sync", soon: true },
   { id: "duka", name: "Duka POS", href: "/products/duka-pos" },
   { id: "school", name: "School Management System", href: "/products/school" },
   { id: "pay", name: "Imara Pay", href: "/products/imara-pay" },

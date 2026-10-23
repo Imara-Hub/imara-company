@@ -11,21 +11,21 @@ export const site = {
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.NODE_ENV === "production" ? "https://imaracompany.com" : "http://localhost:3000"),
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "support@imaracompany.com",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "info@imaracompany.com",
   // International format, digits only (country code + number).
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "25761228778",
   location: { city: "Bujumbura", country: "Burundi", countryCode: "BI" },
   instagram: { handle: "@imaraco.ltd", url: "https://www.instagram.com/imaraco.ltd" },
 } as const;
 
-// Imara Afya on the app stores.
+// Afya Sync on the app stores.
 // While `launched` is false, the site shows "Coming soon" store badges that
 // aren't clickable. At launch: set the real URLs below, then `launched: true`.
 export const afyaStores = {
   launched: false,
   playStore:
     process.env.NEXT_PUBLIC_AFYA_PLAY_STORE_URL ??
-    "https://play.google.com/store/search?q=Imara%20Afya&c=apps",
+    "https://play.google.com/store/search?q=Afya%20Sync&c=apps",
   appStore: process.env.NEXT_PUBLIC_AFYA_APP_STORE_URL ?? "https://apps.apple.com/",
 };
 

@@ -45,7 +45,7 @@ export async function ProductHighlights() {
       </Flex>
 
       <Stack gap="5">
-        {/* Imara Afya Band (coming soon), linked to the Imara Afya card below */}
+        {/* Afya Sync Band (coming soon), linked to the Afya Sync card below */}
         <BandShowcase headingAs="h3" />
         <AfyaSpotlight headingAs="h3" showBandNote={false} />
         <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">

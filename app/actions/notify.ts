@@ -11,7 +11,7 @@ import { notifySchema } from "@/lib/validation";
 import type { ActionResult } from "./contact";
 
 /**
- * Newsletter + "Notify me" sign-ups (Labs, Imara Afya, the band, footer):
+ * Newsletter + "Notify me" sign-ups (Labs, Afya Sync, the band, footer):
  * 1. saves the email to the mailing list (if RESEND_AUDIENCE_ID is set),
  * 2. tells your inbox who signed up for what,
  * 3. sends the visitor a short confirmation in their language.

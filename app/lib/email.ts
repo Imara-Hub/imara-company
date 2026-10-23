@@ -4,9 +4,9 @@ import { site } from "@/data/site";
 /*
  * Email through Resend (https://resend.com). Settings (in .env.local / Vercel):
  *   RESEND_API_KEY      API key from resend.com
- *   CONTACT_TO_EMAIL    where form messages go (e.g. support@imaracompany.com)
+ *   CONTACT_TO_EMAIL    where form messages go (e.g. info@imaracompany.com)
  *   CONTACT_FROM_EMAIL  sender, on your verified domain (optional; defaults
- *                       to "Imara <support@imaracompany.com>", i.e. site.email)
+ *                       to "Imara <info@imaracompany.com>", i.e. site.email)
  *   RESEND_AUDIENCE_ID  optional: mailing list for newsletter / "Notify me"
  * In development without a key, emails are printed in the terminal instead.
  */

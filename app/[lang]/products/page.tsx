@@ -30,7 +30,7 @@ export default async function ProductsPage() {
         subtitle={t.productsPage.subtitle}
       />
 
-      {/* Imara Afya Band: coming soon (top), then the Imara Afya app */}
+      {/* Afya Sync Band: coming soon (top), then the Afya Sync app */}
       <Section aria-labelledby="band-title" pt={{ base: "8", md: "10" }} pb={{ base: "0", md: "0" }}>
         <BandShowcase />
       </Section>

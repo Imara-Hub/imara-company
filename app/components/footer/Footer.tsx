@@ -180,7 +180,7 @@ export async function Footer() {
           <FooterColumn
             title={t.footer.products}
             links={getProducts(t).map((p) => ({
-              // Imara Afya: store link after launch, Products page until then.
+              // Afya Sync: store link after launch, Products page until then.
               href: p.href ? href(p.href) : afyaStores.launched ? afyaStores.playStore : href(routes.products),
               label: p.name,
               external: !p.href && afyaStores.launched,

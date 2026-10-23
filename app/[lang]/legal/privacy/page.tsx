@@ -9,14 +9,14 @@ const content: Record<Locale, LegalContent> = {
   en: {
     title: "Privacy Policy",
     description:
-      "How Imara Company Limited collects, uses and protects personal data on its website and in the Imara Afya app.",
-    intro: "How we collect, use and protect your information on this website and in our apps, including Imara Afya.",
+      "How Imara Company Limited collects, uses and protects personal data on its website and in the Afya Sync app.",
+    intro: "How we collect, use and protect your information on this website and in our apps, including Afya Sync.",
     updated: "7 October 2026",
     sections: [
       {
         heading: "Who we are",
         paragraphs: [
-          `${site.name} ("Imara", "we", "us") is a technology company based in ${site.location.city}, ${site.location.country}. This policy applies to this website and to our apps, including Imara Afya. Contact: ${site.email}.`,
+          `${site.name} ("Imara", "we", "us") is a technology company based in ${site.location.city}, ${site.location.country}. This policy applies to this website and to our apps, including Afya Sync. Contact: ${site.email}.`,
         ],
       },
       {
@@ -29,9 +29,9 @@ const content: Record<Locale, LegalContent> = {
         ],
       },
       {
-        heading: "Information in the Imara Afya app",
+        heading: "Information in the Afya Sync app",
         paragraphs: [
-          "Imara Afya helps you track your health habits. Depending on the features you use, the app may process: water intake, steps, sleep and sleep schedule, weight and height (to calculate BMI), daily mood and energy check-ins, menstrual cycle and period information, and blood pressure, blood sugar and pulse readings.",
+          "Afya Sync helps you track your health habits. Depending on the features you use, the app may process: water intake, steps, sleep and sleep schedule, weight and height (to calculate BMI), daily mood and energy check-ins, menstrual cycle and period information, and blood pressure, blood sugar and pulse readings.",
           "This is sensitive health information. We only use it to provide the app's features to you. We do not sell it, and we do not use it for advertising.",
         ],
       },
@@ -60,7 +60,7 @@ const content: Record<Locale, LegalContent> = {
       {
         heading: "Your rights",
         paragraphs: [
-          `You can ask to access, correct or delete your personal data, or withdraw consent, by emailing ${site.email}. In the Imara Afya app, you can also delete your data from within the app or by contacting us.`,
+          `You can ask to access, correct or delete your personal data, or withdraw consent, by emailing ${site.email}. In the Afya Sync app, you can also delete your data from within the app or by contacting us.`,
         ],
       },
       {
@@ -87,15 +87,15 @@ const content: Record<Locale, LegalContent> = {
   fr: {
     title: "Politique de confidentialité",
     description:
-      "Comment Imara Company Limited collecte, utilise et protège les données personnelles sur son site web et dans l'application Imara Afya.",
+      "Comment Imara Company Limited collecte, utilise et protège les données personnelles sur son site web et dans l'application Afya Sync.",
     intro:
-      "Comment nous collectons, utilisons et protégeons vos informations sur ce site web et dans nos applications, dont Imara Afya.",
+      "Comment nous collectons, utilisons et protégeons vos informations sur ce site web et dans nos applications, dont Afya Sync.",
     updated: "7 octobre 2026",
     sections: [
       {
         heading: "Qui sommes-nous",
         paragraphs: [
-          `${site.name} (« Imara », « nous ») est une entreprise technologique basée à ${site.location.city}, au ${site.location.country}. Cette politique s'applique à ce site web et à nos applications, dont Imara Afya. Contact : ${site.email}.`,
+          `${site.name} (« Imara », « nous ») est une entreprise technologique basée à ${site.location.city}, au ${site.location.country}. Cette politique s'applique à ce site web et à nos applications, dont Afya Sync. Contact : ${site.email}.`,
         ],
       },
       {
@@ -108,9 +108,9 @@ const content: Record<Locale, LegalContent> = {
         ],
       },
       {
-        heading: "Informations dans l'application Imara Afya",
+        heading: "Informations dans l'application Afya Sync",
         paragraphs: [
-          "Imara Afya vous aide à suivre vos habitudes de santé. Selon les fonctionnalités utilisées, l'application peut traiter : l'hydratation, les pas, le sommeil et les horaires de sommeil, le poids et la taille (pour calculer l'IMC), les bilans quotidiens d'humeur et d'énergie, les informations sur le cycle menstruel et les règles, ainsi que les mesures de tension artérielle, de glycémie et de pouls.",
+          "Afya Sync vous aide à suivre vos habitudes de santé. Selon les fonctionnalités utilisées, l'application peut traiter : l'hydratation, les pas, le sommeil et les horaires de sommeil, le poids et la taille (pour calculer l'IMC), les bilans quotidiens d'humeur et d'énergie, les informations sur le cycle menstruel et les règles, ainsi que les mesures de tension artérielle, de glycémie et de pouls.",
           "Ce sont des informations de santé sensibles. Nous les utilisons uniquement pour vous fournir les fonctionnalités de l'application. Nous ne les vendons pas et ne les utilisons pas à des fins publicitaires.",
         ],
       },
@@ -139,7 +139,7 @@ const content: Record<Locale, LegalContent> = {
       {
         heading: "Vos droits",
         paragraphs: [
-          `Vous pouvez demander l'accès, la correction ou la suppression de vos données personnelles, ou retirer votre consentement, en écrivant à ${site.email}. Dans l'application Imara Afya, vous pouvez aussi supprimer vos données depuis l'application ou en nous contactant.`,
+          `Vous pouvez demander l'accès, la correction ou la suppression de vos données personnelles, ou retirer votre consentement, en écrivant à ${site.email}. Dans l'application Afya Sync, vous pouvez aussi supprimer vos données depuis l'application ou en nous contactant.`,
         ],
       },
       {
@@ -171,7 +171,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 // Privacy Policy: "/[lang]/legal/privacy"
-// This URL is the one to give the Google Play Store for Imara Afya.
+// This URL is the one to give the Google Play Store for Afya Sync.
 export default async function PrivacyPage() {
   const c = content[await getLang()];
   return <LegalDocument title={c.title} intro={c.intro} updated={c.updated} sections={c.sections} />;

@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import Image from "next/image";
 
 /**
- * Realistic phone frames (iPhone or Google Pixel) showing real Imara Afya
+ * Realistic phone frames (iPhone or Google Pixel) showing real Afya Sync
  * screenshots. Screenshots live in public/products/imara-afya/:
  *  - iPhone ones were taken on an iPhone (personal details removed)
  *  - Android ones come from the Play Store listing (demo data)
@@ -14,13 +14,13 @@ const p = (px: number) => `${+((px / 220) * 100).toFixed(3)}cqw`;
 
 export const afyaScreens = {
   // iPhone screenshots (1170 × 2532)
-  home: { src: "/products/imara-afya/home.webp", ratio: "1170 / 2532", alt: "Imara Afya home screen on iPhone: today's goals for steps, water, sleep and mood" },
-  "check-in": { src: "/products/imara-afya/check-in.webp", ratio: "1170 / 2532", alt: "Imara Afya check-in screen on iPhone: mood and energy trend" },
-  sleep: { src: "/products/imara-afya/sleep.webp", ratio: "1170 / 2532", alt: "Imara Afya sleep screen on iPhone: 8 hours slept, goal met" },
+  home: { src: "/products/imara-afya/home.webp", ratio: "1170 / 2532", alt: "Afya Sync home screen on iPhone: today's goals for steps, water, sleep and mood" },
+  "check-in": { src: "/products/imara-afya/check-in.webp", ratio: "1170 / 2532", alt: "Afya Sync check-in screen on iPhone: mood and energy trend" },
+  sleep: { src: "/products/imara-afya/sleep.webp", ratio: "1170 / 2532", alt: "Afya Sync sleep screen on iPhone: 8 hours slept, goal met" },
   // Android screenshots (Play Store listing)
-  "android-home": { src: "/products/imara-afya/android-home.webp", ratio: "720 / 1499", alt: "Imara Afya home screen on Android in dark mode" },
-  "android-check-in": { src: "/products/imara-afya/android-check-in.webp", ratio: "720 / 1499", alt: "Imara Afya check-in screen on Android in dark mode" },
-  "android-cycle": { src: "/products/imara-afya/android-cycle.webp", ratio: "720 / 1500", alt: "Imara Afya cycle screen on Android: day 17, next period in 12 days" },
+  "android-home": { src: "/products/imara-afya/android-home.webp", ratio: "720 / 1499", alt: "Afya Sync home screen on Android in dark mode" },
+  "android-check-in": { src: "/products/imara-afya/android-check-in.webp", ratio: "720 / 1499", alt: "Afya Sync check-in screen on Android in dark mode" },
+  "android-cycle": { src: "/products/imara-afya/android-cycle.webp", ratio: "720 / 1500", alt: "Afya Sync cycle screen on Android: day 17, next period in 12 days" },
 } as const;
 
 export type AfyaScreen = keyof typeof afyaScreens;

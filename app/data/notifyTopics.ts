@@ -7,13 +7,13 @@ import type { Dictionary } from "@/i18n/dictionaries/en";
 export const notifyTopics = ["news", "afya", "band", "vikoba", "logistics", "remittance"] as const;
 export type NotifyTopic = (typeof notifyTopics)[number];
 
-/** Name of a topic in a language, e.g. "band" -> "Imara Afya Band". */
+/** Name of a topic in a language, e.g. "band" -> "Afya Sync Band". */
 export function notifyTopicName(topic: NotifyTopic, t: Dictionary) {
   switch (topic) {
     case "news":
       return t.notify.newsTopic;
     case "afya":
-      return "Imara Afya";
+      return "Afya Sync";
     case "band":
       return t.band.title;
     default:

@@ -21,7 +21,7 @@ const content: Record<Locale, LegalContent> = {
       {
         heading: "Our services",
         paragraphs: [
-          "We offer software products (such as Imara Afya, Duka POS, our School Management System and Imara Pay) and software services (such as web and mobile development, design and training). Specific products or projects may have additional terms or a separate agreement, which apply alongside these terms.",
+          "We offer software products (such as Afya Sync, Duka POS, our School Management System and Imara Pay) and software services (such as web and mobile development, design and training). Specific products or projects may have additional terms or a separate agreement, which apply alongside these terms.",
         ],
       },
       {
@@ -39,9 +39,9 @@ const content: Record<Locale, LegalContent> = {
         ],
       },
       {
-        heading: "Health information (Imara Afya)",
+        heading: "Health information (Afya Sync)",
         paragraphs: [
-          "Imara Afya is a wellness tool, not a medical device. It does not provide medical advice, diagnosis or treatment. Cycle predictions are estimates and must not be used as contraception, and explanations of blood pressure, blood sugar and pulse readings are general information, not a diagnosis. Always consult a qualified health professional about medical concerns.",
+          "Afya Sync is a wellness tool, not a medical device. It does not provide medical advice, diagnosis or treatment. Cycle predictions are estimates and must not be used as contraception, and explanations of blood pressure, blood sugar and pulse readings are general information, not a diagnosis. Always consult a qualified health professional about medical concerns.",
         ],
       },
       {
@@ -78,7 +78,7 @@ const content: Record<Locale, LegalContent> = {
       {
         heading: "Nos services",
         paragraphs: [
-          "Nous proposons des produits logiciels (comme Imara Afya, Duka POS, notre Système de gestion scolaire et Imara Pay) et des services logiciels (comme le développement web et mobile, le design et la formation). Certains produits ou projets peuvent faire l'objet de conditions supplémentaires ou d'un contrat distinct, qui s'appliquent en complément des présentes conditions.",
+          "Nous proposons des produits logiciels (comme Afya Sync, Duka POS, notre Système de gestion scolaire et Imara Pay) et des services logiciels (comme le développement web et mobile, le design et la formation). Certains produits ou projets peuvent faire l'objet de conditions supplémentaires ou d'un contrat distinct, qui s'appliquent en complément des présentes conditions.",
         ],
       },
       {
@@ -96,9 +96,9 @@ const content: Record<Locale, LegalContent> = {
         ],
       },
       {
-        heading: "Informations de santé (Imara Afya)",
+        heading: "Informations de santé (Afya Sync)",
         paragraphs: [
-          "Imara Afya est un outil de bien-être, pas un dispositif médical. Il ne fournit ni avis médical, ni diagnostic, ni traitement. Les prévisions du cycle sont des estimations et ne doivent pas servir de contraception, et les explications sur la tension artérielle, la glycémie et le pouls sont des informations générales, pas un diagnostic. Consultez toujours un professionnel de santé qualifié pour toute question médicale.",
+          "Afya Sync est un outil de bien-être, pas un dispositif médical. Il ne fournit ni avis médical, ni diagnostic, ni traitement. Les prévisions du cycle sont des estimations et ne doivent pas servir de contraception, et les explications sur la tension artérielle, la glycémie et le pouls sont des informations générales, pas un diagnostic. Consultez toujours un professionnel de santé qualifié pour toute question médicale.",
         ],
       },
       {

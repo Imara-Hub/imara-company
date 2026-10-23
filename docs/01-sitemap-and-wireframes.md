@@ -1,14 +1,14 @@
 # Imara website: sitemap & wireframes
 
 English only for now (language switching removed; French/Swahili can be added later).
-Imara Afya has no page of its own: its cards link straight to Google Play and the App Store.
+Afya Sync has no page of its own: its cards link straight to Google Play and the App Store.
 
 ## Sitemap
 
 ```
 /
 ├── /                          Home                                  ✅ built
-├── /products                  Products: Imara Afya featured (store links) + 3 cards
+├── /products                  Products: Afya Sync featured (store links) + 3 cards
 │   ├── /products/duka-pos     Duka POS
 │   ├── /products/school       School Management System  → "Request a pilot"
 │   └── /products/imara-pay    Imara Pay  → how it works, fees, order form, FAQ
@@ -57,7 +57,7 @@ Layout notes assume mobile first: single column on phones, expanding at `md` (76
 - Feature grid (6–8 features).
 - "How it works" in 3 steps.
 - Product-specific blocks:
-  - **Imara Afya:** tracked metrics (water, steps, sleep, weight/BMI, daily check-in, cycle tracking with prediction); languages EN/FR/SW; Play Store / App Store buttons (links are placeholders); a **medical disclaimer** callout; a **privacy note** callout linking to the Privacy Policy.
+  - **Afya Sync:** tracked metrics (water, steps, sleep, weight/BMI, daily check-in, cycle tracking with prediction); languages EN/FR/SW; Play Store / App Store buttons (links are placeholders); a **medical disclaimer** callout; a **privacy note** callout linking to the Privacy Policy.
   - **Duka POS:** multi-tenant, multiple branches, inventory, sales, customers and loyalty, reports, staff roles. CTA: Request a demo.
   - **School Management System:** students, classes, timetables, grades, PDF report cards (*bulletin scolaire*), fees and receipts, attendance, admin dashboard, offline-capable. CTA: **Request a pilot** (a form with school name, size and city).
   - **Imara Pay:** a how-it-works stepper (choose service → get quote → pay with Lumicash/EcoCash → receive activation). Fee explanation: no invented numbers; "fees shown before you pay / contact us for pricing". Then the **order form** (service, plan, email for the account, mobile-money number, provider), an FAQ accordion, and a "not affiliated with the listed services" note.
@@ -80,7 +80,7 @@ Layout notes assume mobile first: single column on phones, expanding at `md` (76
 
 ### Legal
 - Long-form readable layout (max ~70ch), last-updated date, and a table of contents on desktop.
-- The Privacy Policy covers both the website and the Imara Afya app (health data, cycle data, retention, deletion requests, contact). **It should be reviewed by a lawyer before launch.**
+- The Privacy Policy covers both the website and the Afya Sync app (health data, cycle data, retention, deletion requests, contact). **It should be reviewed by a lawyer before launch.**
 
 ### Blog (structure)
 - Index with an empty state ("News coming soon") and a post card grid ready for MDX posts.

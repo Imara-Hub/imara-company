@@ -5,7 +5,7 @@ import { Float } from "@/components/motion/Reveal";
 import { getI18n } from "@/i18n/server";
 
 /**
- * Homepage hero picture: the Imara Afya Band mockup
+ * Homepage hero picture: the Afya Sync Band mockup
  * (public/products/imara-afya/band.webp), floating over soft rings and a
  * warm glow, with small floating info chips around it.
  */

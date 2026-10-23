@@ -34,7 +34,7 @@ function PlatformLabel({ icon, label }: { icon: React.ReactNode; label: string }
 }
 
 /**
- * Featured block for Imara Afya, our first product. Shows "Coming soon"
+ * Featured block for Afya Sync, our first product. Shows "Coming soon"
  * badges + a notify signup until launch, then links to the app stores. `showDisclaimer` adds the medical note (Products page).
  */
 export async function AfyaSpotlight({
@@ -91,7 +91,7 @@ export async function AfyaSpotlight({
               />
             </Box>
             <Heading as={headingAs} id="afya-title" size={{ base: "3xl", md: "4xl" }}>
-              Imara Afya
+              Afya Sync
             </Heading>
           </HStack>
           <Text textStyle="lead" color="fg.muted">
@@ -100,7 +100,7 @@ export async function AfyaSpotlight({
           <List.Root variant="plain" display="grid" gridTemplateColumns={{ base: "1fr", sm: "1fr 1fr" }} gap="2">
               {t.afya.features.map((f) => (
                 <List.Item key={f}>
-                  {/* Green tick: Imara Afya's green (from its logo) */}
+                  {/* Green tick: Afya Sync's green (from its logo) */}
                   <List.Indicator asChild color={{ _light: "#2A9F42", _dark: "#4CC764" }}>
                     <LuCheck />
                   </List.Indicator>
@@ -142,7 +142,7 @@ export async function AfyaSpotlight({
               <Text fontSize="sm" fontWeight="medium" color="fg.muted">
                 {t.afya.notifyPrompt}
               </Text>
-              <NotifyForm topic="afya" topicName="Imara Afya" />
+              <NotifyForm topic="afya" topicName="Afya Sync" />
             </Stack>
           )}
           {showDisclaimer && (
@@ -164,7 +164,7 @@ export async function AfyaSpotlight({
 
         <Center
           alignSelf="stretch"
-          // Imara Afya's own colors (blue → green, from its logo), not the site orange
+          // Afya Sync's own colors (blue → green, from its logo), not the site orange
           bgGradient="to-br"
           gradientFrom={{ _light: "#E9F0FA", _dark: "#0F1A2B" }}
           gradientTo={{ _light: "#E8F6EB", _dark: "#0E2116" }}

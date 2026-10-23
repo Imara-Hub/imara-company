@@ -46,7 +46,7 @@ export const en = {
       "Imara Company builds websites, web apps and mobile apps for businesses, creates its own software products, and offers friendly help-desk support for laptops and phones.",
     productsTitle: "Products",
     productsDescription:
-      "Imara Afya, Duka POS, School Management System and Imara Pay: software products built for real-world conditions.",
+      "Afya Sync, Duka POS, School Management System and Imara Pay: software products built for real-world conditions.",
     servicesTitle: "Services",
     servicesDescription:
       "AI solutions and automation, websites, web apps and mobile apps, help desk and IT support, backend/API and DevOps, UI/UX and graphic design, and software training.",
@@ -77,18 +77,18 @@ export const en = {
     text: "Imara is one team for all things software. We build websites, web apps and mobile apps for businesses, create our own products, and keep your laptops and phones running with friendly help-desk support.",
     ctaPrimary: "Explore our products",
     ctaSecondary: "Work with us",
-    watchAlt: "The Imara Afya Band, a screenless smart band with a woven strap, coming soon.",
+    watchAlt: "The Afya Sync Band, a screenless smart band with a woven strap, coming soon.",
     chipSteps: "Tracks your day",
     chipStepsText: "Same features as the app",
     chipSync: "Seamless sync",
-    chipSyncText: "With the Imara Afya app",
-    chipBand: "Imara Afya Band",
+    chipSyncText: "With the Afya Sync app",
+    chipBand: "Afya Sync Band",
   },
 
   // Hero picture (laptop, code, phone, help desk)
   heroArt: {
     label:
-      "Build it, run it, fix it: a laptop showing the Imara website with its code, the Imara Afya app on a phone, and a help-desk chat where a laptop problem is fixed.",
+      "Build it, run it, fix it: a laptop showing the Imara website with its code, the Afya Sync app on a phone, and a help-desk chat where a laptop problem is fixed.",
     miniText: "One team for websites, apps, our own products and help-desk support.",
     websites: "Websites & web apps",
     mobileApps: "Mobile apps",
@@ -219,16 +219,16 @@ export const en = {
       "Achievements & streaks",
       "Light & dark mode",
     ],
-    bandTitle: "Coming soon: the Imara Afya Band.",
+    bandTitle: "Coming soon: the Afya Sync Band.",
     bandText: "A screenless band that tracks your day and sends it to the app, where you see everything.",
     notifyPrompt: "Be the first to know when it launches:",
     disclaimerTitle: "Not medical advice",
     disclaimer:
-      "Imara Afya is a wellness tool and does not diagnose, treat or prevent any condition. Cycle predictions are estimates and must not be used as contraception, and blood pressure, sugar and pulse readings are for your own tracking. Talk to a health professional about any medical concern. Your data stays private: see our",
+      "Afya Sync is a wellness tool and does not diagnose, treat or prevent any condition. Cycle predictions are estimates and must not be used as contraception, and blood pressure, sugar and pulse readings are for your own tracking. Talk to a health professional about any medical concern. Your data stays private: see our",
     privacyLink: "Privacy Policy",
-    logoAlt: "Imara Afya logo",
+    logoAlt: "Afya Sync logo",
     screensAlt:
-      "Real screens from the Imara Afya app: the home screen on an iPhone in light mode and on an Android phone in dark mode.",
+      "Real screens from the Afya Sync app: the home screen on an iPhone in light mode and on an Android phone in dark mode.",
   },
 
   products: {
@@ -259,16 +259,16 @@ export const en = {
     },
   },
 
-  // Imara Afya Band showcase (top of the Products page)
+  // Afya Sync Band showcase (top of the Products page)
   band: {
     eyebrow: "Coming soon",
-    title: "Imara Afya Band",
-    text: "Our first wearable: a screenless smart band that works with the Imara Afya app. Wear it all day; your results appear in the app, with the same features you already use.",
-    points: ["Discreet, lightweight design", "Your results appear in the Imara Afya app", "Designed for everyday wear"],
+    title: "Afya Sync Band",
+    text: "Our first wearable: a screenless smart band that works with the Afya Sync app. Wear it all day; your results appear in the app, with the same features you already use.",
+    points: ["Discreet, lightweight design", "Your results appear in the Afya Sync app", "Designed for everyday wear"],
     notify: "Be the first to know when it launches:",
-    partOf: "Part of Imara Afya",
-    connector: "Works together with the Imara Afya app",
-    withApp: "Pairs with the Imara Afya Band",
+    partOf: "Part of Afya Sync",
+    connector: "Works together with the Afya Sync app",
+    withApp: "Pairs with the Afya Sync Band",
   },
 
   productsPage: {
@@ -851,7 +851,7 @@ export const en = {
 
   // Names in the contact form's "I'm interested in" list.
   interest: {
-    afya: "Imara Afya",
+    afya: "Afya Sync",
     duka: "Duka POS",
     school: "School Management System",
     pay: "Imara Pay",

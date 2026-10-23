@@ -47,7 +47,7 @@ export const fr: Dictionary = {
       "Imara Company crée des sites web, des applications web et mobiles pour les entreprises, développe ses propres produits logiciels et offre une assistance informatique accueillante pour ordinateurs et téléphones.",
     productsTitle: "Produits",
     productsDescription:
-      "Imara Afya, Duka POS, Système de gestion scolaire et Imara Pay : des produits logiciels pensés pour les conditions réelles.",
+      "Afya Sync, Duka POS, Système de gestion scolaire et Imara Pay : des produits logiciels pensés pour les conditions réelles.",
     servicesTitle: "Services",
     servicesDescription:
       "Solutions d'IA et automatisation, sites web, applications web et mobiles, assistance informatique, backend/API et DevOps, design UI/UX et graphique, et formations.",
@@ -78,17 +78,17 @@ export const fr: Dictionary = {
     text: "Imara, c'est une seule équipe pour tout ce qui touche au logiciel. Nous créons des sites web, des applications web et mobiles pour les entreprises, développons nos propres produits, et assurons le bon fonctionnement de vos ordinateurs et téléphones grâce à une assistance accueillante.",
     ctaPrimary: "Découvrir nos produits",
     ctaSecondary: "Travailler avec nous",
-    watchAlt: "Le bracelet Imara Afya, un bracelet connecté sans écran au bracelet tissé, bientôt disponible.",
+    watchAlt: "Le bracelet Afya Sync, un bracelet connecté sans écran au bracelet tissé, bientôt disponible.",
     chipSteps: "Suit votre journée",
     chipStepsText: "Mêmes fonctionnalités que l'appli",
     chipSync: "Synchronisation fluide",
-    chipSyncText: "Avec l'appli Imara Afya",
-    chipBand: "Bracelet Imara Afya",
+    chipSyncText: "Avec l'appli Afya Sync",
+    chipBand: "Bracelet Afya Sync",
   },
 
   heroArt: {
     label:
-      "On le crée, on le fait tourner, on le répare : un ordinateur portable affichant le site Imara et son code, l'application Imara Afya sur un téléphone, et une discussion avec l'assistance où un problème d'ordinateur est résolu.",
+      "On le crée, on le fait tourner, on le répare : un ordinateur portable affichant le site Imara et son code, l'application Afya Sync sur un téléphone, et une discussion avec l'assistance où un problème d'ordinateur est résolu.",
     miniText: "Une seule équipe pour les sites web, les applications, nos propres produits et l'assistance.",
     websites: "Sites et applis web",
     mobileApps: "Applis mobiles",
@@ -219,16 +219,16 @@ export const fr: Dictionary = {
       "Succès et séries",
       "Mode clair et sombre",
     ],
-    bandTitle: "Bientôt : le bracelet Imara Afya.",
+    bandTitle: "Bientôt : le bracelet Afya Sync.",
     bandText: "Un bracelet sans écran qui suit votre journée et l'envoie à l'application, où vous retrouvez tout.",
     notifyPrompt: "Soyez parmi les premiers informés du lancement :",
     disclaimerTitle: "Pas un avis médical",
     disclaimer:
-      "Imara Afya est un outil de bien-être et ne diagnostique, ne traite ni ne prévient aucune maladie. Les prévisions du cycle sont des estimations et ne doivent pas servir de contraception, et les mesures de tension, de glycémie et de pouls sont destinées à votre propre suivi. Parlez à un professionnel de santé pour toute question médicale. Vos données restent privées : consultez notre",
+      "Afya Sync est un outil de bien-être et ne diagnostique, ne traite ni ne prévient aucune maladie. Les prévisions du cycle sont des estimations et ne doivent pas servir de contraception, et les mesures de tension, de glycémie et de pouls sont destinées à votre propre suivi. Parlez à un professionnel de santé pour toute question médicale. Vos données restent privées : consultez notre",
     privacyLink: "Politique de confidentialité",
-    logoAlt: "Logo Imara Afya",
+    logoAlt: "Logo Afya Sync",
     screensAlt:
-      "Écrans réels de l'application Imara Afya : l'accueil sur un iPhone en mode clair et sur un téléphone Android en mode sombre.",
+      "Écrans réels de l'application Afya Sync : l'accueil sur un iPhone en mode clair et sur un téléphone Android en mode sombre.",
   },
 
   products: {
@@ -261,13 +261,13 @@ export const fr: Dictionary = {
 
   band: {
     eyebrow: "Bientôt disponible",
-    title: "Bracelet Imara Afya",
-    text: "Notre premier objet connecté : un bracelet intelligent sans écran qui fonctionne avec l'application Imara Afya. Portez-le toute la journée ; vos résultats s'affichent dans l'application, avec les mêmes fonctionnalités que vous utilisez déjà.",
-    points: ["Design discret et léger", "Vos résultats dans l'application Imara Afya", "Pensé pour être porté au quotidien"],
+    title: "Bracelet Afya Sync",
+    text: "Notre premier objet connecté : un bracelet intelligent sans écran qui fonctionne avec l'application Afya Sync. Portez-le toute la journée ; vos résultats s'affichent dans l'application, avec les mêmes fonctionnalités que vous utilisez déjà.",
+    points: ["Design discret et léger", "Vos résultats dans l'application Afya Sync", "Pensé pour être porté au quotidien"],
     notify: "Soyez parmi les premiers informés du lancement :",
-    partOf: "Fait partie d'Imara Afya",
-    connector: "Fonctionne avec l'application Imara Afya",
-    withApp: "Se connecte au Bracelet Imara Afya",
+    partOf: "Fait partie d'Afya Sync",
+    connector: "Fonctionne avec l'application Afya Sync",
+    withApp: "Se connecte au Bracelet Afya Sync",
   },
 
   productsPage: {
@@ -848,7 +848,7 @@ export const fr: Dictionary = {
   },
 
   interest: {
-    afya: "Imara Afya",
+    afya: "Afya Sync",
     duka: "Duka POS",
     school: "Système de gestion scolaire",
     pay: "Imara Pay",

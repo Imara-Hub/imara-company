@@ -20,7 +20,7 @@ import { AfyaPhone } from "./AfyaPhone";
 /**
  * Hero illustration: the three parts of "Build it. Run it. Fix it."
  *   Build it → a laptop showing this website (imaracompany.com) + its code
- *   Run it   → our own product, Imara Afya, on a phone
+ *   Run it   → our own product, Afya Sync, on a phone
  *   Fix it   → a help-desk chat where a laptop problem gets solved
  *
  * Every size is in `cqw` (a % of the illustration's width), so it scales
@@ -161,7 +161,7 @@ function Laptop({ t }: { t: Dictionary }) {
                         style={{ width: "80%", height: "auto" }}
                       />
                     ),
-                    name: "Imara Afya",
+                    name: "Afya Sync",
                     tag: t.common.comingSoon,
                   },
                   { icon: <LuStore />, name: "Duka POS", tag: t.products.duka.category },
@@ -428,7 +428,7 @@ export async function HeroIllustration() {
           </Float>
         </Box>
 
-        {/* Run it: Imara Afya on a phone */}
+        {/* Run it: Afya Sync on a phone */}
         <Box position="absolute" right="0" top={u(36)}>
           <Float>
             <Stack gap={u(6)} align="flex-end">

@@ -8,7 +8,7 @@ import type { NotifyTopic } from "@/data/notifyTopics";
 import { fill } from "@/i18n/config";
 import { notifySchema } from "@/lib/validation";
 
-/** One-field "Notify me" email capture (Labs, Imara Afya, footer newsletter). */
+/** One-field "Notify me" email capture (Labs, Afya Sync, footer newsletter). */
 export function NotifyForm({
   topic,
   topicName,
