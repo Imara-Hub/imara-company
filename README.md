@@ -1,6 +1,59 @@
-# Imara Company Limited: website
+# Imara Company: website
 
-Next.js 16 (App Router) · TypeScript · Chakra UI v3 · Framer Motion · react-hook-form + zod · Vercel.
+The official website of **Imara Company Limited**, a software company based in
+Bujumbura, Burundi. Live at **[imaracompany.com](https://imaracompany.com)**, in
+English and French.
+
+> *Technology built to last.* Build it. Run it. Fix it.
+
+Imara is one team for all things software: we build websites, web apps and
+mobile apps for businesses, create our own products, and keep laptops and
+phones running with friendly help-desk support.
+
+## What's on the site
+
+**Products**
+- **Afya Sync** (coming soon, Android & iOS): a daily health companion. Water,
+  steps, sleep, weight & BMI, mood and energy check-ins, cycle tracking,
+  blood pressure, sugar and pulse, weekly insights and streaks, in English,
+  French, Swahili and Kirundi.
+- **Afya Sync Band** (coming soon): a screenless smart band that works with the
+  Afya Sync app. Visitors can sign up to be notified at launch.
+- **Duka POS**: point of sale for shops, from a single kiosk to a chain of
+  stores (sales, inventory, branches, staff, loyalty).
+- **School Management System**: students, timetables, grades, report cards,
+  fees and attendance for private schools, even offline.
+- **Imara Pay**: pay for global subscriptions (Netflix, ChatGPT, Claude…) in
+  BIF with Lumicash or EcoCash, with an order form on its page.
+
+**Services**, each with its own detail page (why you need it, what we do,
+benefits, how we work):
+AI solutions & automation · Custom web development · Mobile app development ·
+Help desk & IT support · Backend, APIs & DevOps · UI/UX & graphic design ·
+Training & coding classes.
+
+**Other pages**: Labs (upcoming projects such as a savings-group app and
+shipment tracking, with "notify me" sign-ups) · About (story, values, team) ·
+Contact · Blog · Privacy, Terms and Cookies.
+
+**Features**
+- English and French on every page (`/en/…`, `/fr/…`), chosen from the
+  visitor's browser language or saved choice.
+- Contact, quote and order forms that email the team (via Resend) and send the
+  visitor a confirmation, with spam protection and rate limits.
+- "Notify me" and newsletter sign-ups.
+- WhatsApp contact links.
+- Light and dark mode, mobile-first layout, accessible markup.
+- SEO: per-page titles and descriptions, sitemap, structured data and
+  generated social-share images.
+
+## Tech
+
+Next.js 16 (App Router, Cache Components) · React 19 · TypeScript ·
+Chakra UI v3 · react-hook-form + zod · Resend (email) · Upstash Redis (rate
+limits, optional) · hosted on Vercel, deployed automatically from `main`.
+
+## Run it locally
 
 ```bash
 yarn install        # also regenerates Chakra theme types
@@ -9,6 +62,9 @@ yarn dev            # http://localhost:3000
 yarn build && yarn start
 yarn typecheck && yarn lint
 ```
+
+Settings go in `.env.local` (see `.env.example`). Without `RESEND_API_KEY`,
+emails are printed in the terminal instead of being sent.
 
 ## Folder structure
 
@@ -26,7 +82,8 @@ app/
 │   │   ├── duka-pos/         ← Duka POS
 │   │   ├── school/           ← School Management System
 │   │   └── imara-pay/        ← Imara Pay + order form
-│   ├── services/  labs/  about/  contact/  blog/
+│   ├── services/             ← Services + one page per service: services/[service]/
+│   ├── labs/  about/  contact/  blog/
 │   └── legal/                ← privacy/  terms/  cookies/  (EN + FR text inside)
 │
 ├── i18n/                     ← LANGUAGES
