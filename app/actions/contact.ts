@@ -19,15 +19,10 @@ export type ActionResult =
 
 export async function submitContact(input: unknown): Promise<ActionResult> {
   const parsed = contactSchema.safeParse(input);
-  if (!parsed.success) {
-    // A filled honeypot fails validation too; answer like a success so
-    // bots get no signal.
-    const raw = input as { website?: unknown } | null;
-    if (typeof raw?.website === "string" && raw.website.length > 0) return { ok: true };
-    return { ok: false, error: "invalid" };
-  }
+  if (!parsed.success) return { ok: false, error: "invalid" };
 
   const data = parsed.data;
+  // Bots get a "success" answer so they have no signal to adapt to.
   if (looksLikeBot(data.website, data.startedAt)) return { ok: true };
   if (await isRateLimited(`contact:${await clientIp()}`)) return { ok: false, error: "rateLimited" };
 

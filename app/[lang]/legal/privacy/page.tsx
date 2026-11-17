@@ -22,7 +22,7 @@ const content: Record<Locale, LegalContent> = {
       {
         heading: "Information we collect on this website",
         list: [
-          "Information you send us through forms: name, email, phone/WhatsApp number, your area of interest and your message.",
+          "Information you send us through forms: name, email, your area of interest and your message.",
           "Email addresses you give us to be notified about new products.",
           "Basic technical data needed to run the site securely (for example, IP address in server logs, used to prevent spam and abuse).",
           "If analytics are enabled, we use privacy-friendly, cookie-free analytics that count visits without identifying you.",
@@ -101,7 +101,7 @@ const content: Record<Locale, LegalContent> = {
       {
         heading: "Informations collectées sur ce site",
         list: [
-          "Les informations que vous nous envoyez via les formulaires : nom, e-mail, numéro de téléphone/WhatsApp, votre domaine d'intérêt et votre message.",
+          "Les informations que vous nous envoyez via les formulaires : nom, e-mail, votre domaine d'intérêt et votre message.",
           "Les adresses e-mail que vous nous donnez pour être informé(e) de nos nouveaux produits.",
           "Des données techniques de base nécessaires au fonctionnement sécurisé du site (par exemple l'adresse IP dans les journaux du serveur, utilisée pour prévenir le spam et les abus).",
           "Si des statistiques sont activées, nous utilisons un outil respectueux de la vie privée, sans cookies, qui compte les visites sans vous identifier.",

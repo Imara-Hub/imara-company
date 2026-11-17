@@ -77,12 +77,6 @@ export const en = {
     text: "Imara is one team for all things software. We build websites, web apps and mobile apps for businesses, create our own products, and keep your laptops and phones running with friendly help-desk support.",
     ctaPrimary: "Explore our products",
     ctaSecondary: "Work with us",
-    watchAlt: "The Afya Sync Band, a screenless smart band with a woven strap, coming soon.",
-    chipSteps: "Tracks your day",
-    chipStepsText: "Same features as the app",
-    chipSync: "Seamless sync",
-    chipSyncText: "With the Afya Sync app",
-    chipBand: "Afya Sync Band",
   },
 
   // Hero picture (laptop, code, phone, help desk)
@@ -219,8 +213,6 @@ export const en = {
       "Achievements & streaks",
       "Light & dark mode",
     ],
-    bandTitle: "Coming soon: the Afya Sync Band.",
-    bandText: "A screenless band that tracks your day and sends it to the app, where you see everything.",
     notifyPrompt: "Be the first to know when it launches:",
     disclaimerTitle: "Not medical advice",
     disclaimer:
@@ -257,18 +249,6 @@ export const en = {
       short: "Use Lumicash or EcoCash to pay for services like Netflix, ChatGPT and Claude.",
       meta: "Lumicash · EcoCash",
     },
-  },
-
-  // Afya Sync Band showcase (top of the Products page)
-  band: {
-    eyebrow: "Coming soon",
-    title: "Afya Sync Band",
-    text: "Our first wearable: a screenless smart band that works with the Afya Sync app. Wear it all day; your results appear in the app, with the same features you already use.",
-    points: ["Discreet, lightweight design", "Your results appear in the Afya Sync app", "Designed for everyday wear"],
-    notify: "Be the first to know when it launches:",
-    partOf: "Part of Afya Sync",
-    connector: "Works together with the Afya Sync app",
-    withApp: "Pairs with the Afya Sync Band",
   },
 
   productsPage: {

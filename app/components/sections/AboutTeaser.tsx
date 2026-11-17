@@ -71,7 +71,7 @@ export async function AboutTeaser() {
               }}
             >
               <Image
-                src="/brand/imara-logo-full.webp"
+                src="/brand/imara-logo-green.png"
                 alt={t.aboutTeaser.logoAlt}
                 fill
                 sizes="(max-width: 768px) 80vw, 440px"

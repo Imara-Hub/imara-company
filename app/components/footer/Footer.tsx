@@ -1,8 +1,9 @@
 import { Box, Container, Flex, Grid, HStack, Link as ChakraLink, Stack, Text } from "@chakra-ui/react";
 import { cacheLife } from "next/cache";
+import Image from "next/image";
 import NextLink from "next/link";
 import { PiArrowUpBold, PiEnvelopeSimpleFill, PiInstagramLogoFill, PiWhatsappLogoFill } from "react-icons/pi";
-import { Logo, LogoMark } from "@/components/brand/Logo";
+import { LogoMark } from "@/components/brand/Logo";
 import { NotifyForm } from "@/components/shared/NotifyForm";
 import { productPalette } from "@/components/shared/ProductLogo";
 import { getProducts } from "@/data/products";
@@ -126,7 +127,13 @@ export async function Footer() {
         >
           <Stack gap="5" gridColumn={{ base: "span 2", lg: "auto" }} maxW="sm">
             <NextLink href={href(routes.home)} aria-label={t.common.homeAria} style={{ width: "fit-content" }}>
-              <Logo />
+              <Image
+                src="/brand/imara-logo-green.png"
+                alt={site.name}
+                width={112}
+                height={112}
+                style={{ borderRadius: "16px", display: "block" }}
+              />
             </NextLink>
             <Text color="fg.muted" fontSize="sm">
               {t.footer.blurb}

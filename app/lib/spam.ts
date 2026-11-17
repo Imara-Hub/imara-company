@@ -68,13 +68,16 @@ export async function isRateLimited(key: string, max = MAX_PER_WINDOW) {
   return memoryCount(fullKey) > max;
 }
 
+/**
+ * The visitor's IP, for rate limits. Uses the LAST x-forwarded-for entry:
+ * that's the one added by our own host/proxy. Earlier entries come from
+ * the request itself and can be faked to dodge the limits. (On Vercel the
+ * header holds a single, trusted address, so both readings agree.)
+ */
 export async function clientIp() {
   const h = await headers();
-  return (
-    h.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    h.get("x-real-ip") ||
-    "unknown"
-  );
+  const forwarded = h.get("x-forwarded-for")?.split(",").map((s) => s.trim()).filter(Boolean);
+  return forwarded?.at(-1) || h.get("x-real-ip") || "unknown";
 }
 
 /**

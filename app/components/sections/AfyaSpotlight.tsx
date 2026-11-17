@@ -2,7 +2,7 @@ import { Alert, Badge, Box, Center, Grid, Heading, HStack, List, Stack, Text } f
 import Image from "next/image";
 import NextLink from "next/link";
 import { FaAndroid, FaApple } from "react-icons/fa";
-import { LuCheck, LuWatch } from "react-icons/lu";
+import { LuCheck } from "react-icons/lu";
 import { AfyaPhone } from "@/components/illustrations/AfyaPhone";
 import { Float, Reveal } from "@/components/motion/Reveal";
 import { NotifyForm } from "@/components/shared/NotifyForm";
@@ -40,11 +40,9 @@ function PlatformLabel({ icon, label }: { icon: React.ReactNode; label: string }
 export async function AfyaSpotlight({
   headingAs = "h2",
   showDisclaimer = false,
-  showBandNote = true,
 }: {
   headingAs?: "h2" | "h3";
   showDisclaimer?: boolean;
-  showBandNote?: boolean;
 }) {
   const { t, href } = await getI18n();
   return (
@@ -70,15 +68,6 @@ export async function AfyaSpotlight({
             <Badge variant="subtle" colorPalette="gray" size="lg">
               {afyaStores.launched ? t.afya.badgeAvailable : t.afya.badgeSoon}
             </Badge>
-            {/* Where the band has its own section above, link back to it */}
-            {!showBandNote && (
-              <Badge asChild size="lg" variant="outline" colorPalette="green" gap="1.5">
-                <a href="#imara-afya-band">
-                  <LuWatch />
-                  {t.band.withApp}
-                </a>
-              </Badge>
-            )}
           </Stack>
           <HStack gap="3">
             <Box w={{ base: "10", md: "12" }} flexShrink={0}>
@@ -108,34 +97,6 @@ export async function AfyaSpotlight({
                 </List.Item>
               ))}
           </List.Root>
-          {/* The wearable band (coming soon); hidden where the band has its own section */}
-          {showBandNote && (
-                    <HStack
-            gap="3"
-            p="3"
-            borderRadius="l3"
-            borderWidth="1px"
-            borderColor={{ _light: "#CFE9D5", _dark: "#1E3A27" }}
-            bg={{ _light: "#F1FAF3", _dark: "#0E1F14" }}
-          >
-            <Center
-              boxSize="10"
-              borderRadius="l2"
-              bg={{ _light: "#DDF2E2", _dark: "#173323" }}
-              color={{ _light: "#2A9F42", _dark: "#4CC764" }}
-              fontSize="xl"
-              flexShrink={0}
-            >
-              <LuWatch />
-            </Center>
-            <Text fontSize="sm" color="fg.muted">
-              <Text as="span" fontWeight="semibold" color="fg">
-                {t.afya.bandTitle}
-              </Text>{" "}
-              {t.afya.bandText}
-            </Text>
-          </HStack>
-          )}
           <StoreButtons size="lg" pt="1" />
           {!afyaStores.launched && (
             <Stack gap="2" maxW="md">

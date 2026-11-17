@@ -8,7 +8,6 @@ import { getProducts } from "@/data/products";
 import { routes } from "@/data/site";
 import { getI18n } from "@/i18n/server";
 import { AfyaSpotlight } from "./AfyaSpotlight";
-import { BandShowcase } from "./BandShowcase";
 import { Section } from "./Section";
 
 export async function ProductHighlights() {
@@ -45,9 +44,7 @@ export async function ProductHighlights() {
       </Flex>
 
       <Stack gap="5">
-        {/* Afya Sync Band (coming soon), linked to the Afya Sync card below */}
-        <BandShowcase headingAs="h3" />
-        <AfyaSpotlight headingAs="h3" showBandNote={false} />
+        <AfyaSpotlight headingAs="h3" />
         <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
           {otherProducts.map((product, i) => (
             <Reveal key={product.id} delay={i * 0.06}>

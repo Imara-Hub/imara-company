@@ -78,12 +78,6 @@ export const fr: Dictionary = {
     text: "Imara, c'est une seule équipe pour tout ce qui touche au logiciel. Nous créons des sites web, des applications web et mobiles pour les entreprises, développons nos propres produits, et assurons le bon fonctionnement de vos ordinateurs et téléphones grâce à une assistance accueillante.",
     ctaPrimary: "Découvrir nos produits",
     ctaSecondary: "Travailler avec nous",
-    watchAlt: "Le bracelet Afya Sync, un bracelet connecté sans écran au bracelet tissé, bientôt disponible.",
-    chipSteps: "Suit votre journée",
-    chipStepsText: "Mêmes fonctionnalités que l'appli",
-    chipSync: "Synchronisation fluide",
-    chipSyncText: "Avec l'appli Afya Sync",
-    chipBand: "Bracelet Afya Sync",
   },
 
   heroArt: {
@@ -219,8 +213,6 @@ export const fr: Dictionary = {
       "Succès et séries",
       "Mode clair et sombre",
     ],
-    bandTitle: "Bientôt : le bracelet Afya Sync.",
-    bandText: "Un bracelet sans écran qui suit votre journée et l'envoie à l'application, où vous retrouvez tout.",
     notifyPrompt: "Soyez parmi les premiers informés du lancement :",
     disclaimerTitle: "Pas un avis médical",
     disclaimer:
@@ -257,17 +249,6 @@ export const fr: Dictionary = {
       short: "Utilisez Lumicash ou EcoCash pour payer des services comme Netflix, ChatGPT et Claude.",
       meta: "Lumicash · EcoCash",
     },
-  },
-
-  band: {
-    eyebrow: "Bientôt disponible",
-    title: "Bracelet Afya Sync",
-    text: "Notre premier objet connecté : un bracelet intelligent sans écran qui fonctionne avec l'application Afya Sync. Portez-le toute la journée ; vos résultats s'affichent dans l'application, avec les mêmes fonctionnalités que vous utilisez déjà.",
-    points: ["Design discret et léger", "Vos résultats dans l'application Afya Sync", "Pensé pour être porté au quotidien"],
-    notify: "Soyez parmi les premiers informés du lancement :",
-    partOf: "Fait partie d'Afya Sync",
-    connector: "Fonctionne avec l'application Afya Sync",
-    withApp: "Se connecte au Bracelet Afya Sync",
   },
 
   productsPage: {

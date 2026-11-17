@@ -2,7 +2,6 @@ import { Box, SimpleGrid } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/motion/Reveal";
 import { AfyaSpotlight } from "@/components/sections/AfyaSpotlight";
-import { BandShowcase } from "@/components/sections/BandShowcase";
 import { CTASection } from "@/components/sections/CTASection";
 import { Section } from "@/components/sections/Section";
 import { PageHeader } from "@/components/shared/PageHeader";
@@ -30,12 +29,8 @@ export default async function ProductsPage() {
         subtitle={t.productsPage.subtitle}
       />
 
-      {/* Afya Sync Band: coming soon (top), then the Afya Sync app */}
-      <Section aria-labelledby="band-title" pt={{ base: "8", md: "10" }} pb={{ base: "0", md: "0" }}>
-        <BandShowcase />
-      </Section>
-      <Section aria-labelledby="afya-title" pt={{ base: "5", md: "6" }}>
-        <AfyaSpotlight showDisclaimer showBandNote={false} />
+      <Section aria-labelledby="afya-title" pt={{ base: "8", md: "10" }}>
+        <AfyaSpotlight showDisclaimer />
       </Section>
 
       <Section tone="subtle" aria-labelledby="more-title">

@@ -22,9 +22,11 @@ export const contactSchema = z.object({
   message: z.string().trim().min(1, "messageRequired").min(10, "messageShort").max(5000, "tooLong"),
   // Language of the page, so the confirmation email matches it.
   lang: z.enum(locales),
-  // Spam traps: `website` must stay empty (hidden from humans) and
-  // `startedAt` records when the form was shown.
-  website: z.string().max(0),
+  // Spam traps: `website` should stay empty (hidden from humans) and
+  // `startedAt` records when the form was shown. A filled `website` is NOT
+  // a validation error: the server quietly drops it (lib/spam.ts), so the
+  // browser never shows a misleading "invalid" message and bots get no signal.
+  website: z.string().max(500),
   startedAt: z.number(),
 });
 
@@ -35,7 +37,7 @@ export const notifySchema = z.object({
   // One of a fixed list: the server looks up the name itself.
   topic: z.enum(notifyTopics),
   lang: z.enum(locales),
-  website: z.string().max(0),
+  website: z.string().max(500),
   startedAt: z.number(),
 });
 

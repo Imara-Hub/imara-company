@@ -30,8 +30,8 @@ export function LogoMark({ height = 9, color = "fg", ...props }: BoxProps & { he
 
 // Logo sizes: emblem height + wordmark text size (base = phones, md = tablet and up).
 const sizes = {
-  md: { mark: 9, text: "xl", gap: "2" },
-  lg: { mark: { base: "10", md: "12" }, text: { base: "2xl", md: "3xl" }, gap: "2.5" },
+  md: { mark: 9, text: "sm", gap: "2" },
+  lg: { mark: { base: "10", md: "12" }, text: { base: "md", md: "lg" }, gap: "2.5" },
 } as const;
 
 /** Emblem + "imara" wordmark, used in the navbar, mobile menu and footer. */
@@ -51,16 +51,24 @@ export function Logo({
     <HStack gap={s.gap}>
       <LogoMark height={s.mark} color={color} />
       {withName && (
-        <Text
+        <Box
           as="span"
+          display="flex"
+          flexDirection="column"
           fontFamily="logo"
           fontWeight="bold"
           fontSize={s.text}
+          lineHeight="1"
           letterSpacing="-0.03em"
           color={color}
         >
-          imara
-        </Text>
+          <Text as="span" display="block">
+            imara
+          </Text>
+          <Text as="span" display="block">
+            company
+          </Text>
+        </Box>
       )}
     </HStack>
   );
