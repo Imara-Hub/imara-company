@@ -33,9 +33,9 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // Runs on every address except Next.js internals and our real files:
-  // public/brand/*, public/products/imara-afya/* and the icons, sitemap and
+  // public/brand/*, public/images/*, public/products/imara-afya/* and the icons, sitemap and
   // robots made by app/. Add new top-level files or folders in public/ here.
   matcher: [
-    "/((?!_next/|brand/|products/imara-afya/|icon\\.png|apple-icon\\.png|sitemap\\.xml|robots\\.txt|favicon\\.ico).*)",
+    "/((?!_next/|brand/|images/|products/imara-afya/|icon\\.png|apple-icon\\.png|sitemap\\.xml|robots\\.txt|favicon\\.ico).*)",
   ],
 };

@@ -67,11 +67,11 @@ export const servicePalette: Record<
 
 /**
  * Services whose card shows a picture in the top area instead of the
- * coloured pattern. Files live in public/services/.
+ * coloured pattern. Files live in public/images/services/.
  * - ai.webp: AI-generated (Magnific), glowing neural-network brain.
  */
 const servicePhotos: Partial<Record<ServiceId, string>> = {
-  ai: "/services/ai.webp",
+  ai: "/images/services/ai.webp",
 };
 
 /** App-icon style badge with the service's line icon. */
