@@ -1,4 +1,5 @@
 import { Badge, Box, Button, Card, HStack, LinkBox, LinkOverlay, List, Text } from "@chakra-ui/react";
+import Image from "next/image";
 import NextLink from "next/link";
 import { LuArrowRight, LuCheck } from "react-icons/lu";
 import type { Service, ServiceId } from "@/data/services";
@@ -64,6 +65,15 @@ export const servicePalette: Record<
   },
 };
 
+/**
+ * Services whose card shows a picture in the top area instead of the
+ * coloured pattern. Files live in public/services/.
+ * - ai.webp: AI-generated (Magnific), glowing neural-network brain.
+ */
+const servicePhotos: Partial<Record<ServiceId, string>> = {
+  ai: "/services/ai.webp",
+};
+
 /** App-icon style badge with the service's line icon. */
 export function ServiceIcon({ id, className }: { id: ServiceId; className?: string }) {
   const [from, to] = servicePalette[id].icon;
@@ -104,6 +114,7 @@ export async function ServiceCard({ service, detailed = false }: { service: Serv
   const accent = { _light: pal.text.light, _dark: pal.text.dark };
   // Featured (AI): picture on the left, text on the right, from tablet up.
   const wide = service.featured;
+  const photo = servicePhotos[service.id];
 
   const card = (
     <Card.Root
@@ -128,6 +139,8 @@ export async function ServiceCard({ service, detailed = false }: { service: Serv
         "& .sc-bgicon": { transition: `transform .8s ${smooth}, opacity .5s` },
         "&:hover .sc-bgicon, &:focus-within .sc-bgicon": { transform: "rotate(-4deg) scale(1.08) translateX(-6px)", opacity: 0.32 },
         "&:hover .sc-glow, &:focus-within .sc-glow": { transform: "scale(1.35)", opacity: 0.75 },
+        "& .sc-photo": { transition: `transform .8s ${smooth}` },
+        "&:hover .sc-photo, &:focus-within .sc-photo": { transform: "scale(1.06)" },
         "& .sc-arrow": { transition: "transform .25s ease-out" },
         "&:hover .sc-arrow, &:focus-within .sc-arrow": { transform: "translateX(4px)" },
         "@media (prefers-reduced-motion: reduce)": {
@@ -152,41 +165,59 @@ export async function ServiceCard({ service, detailed = false }: { service: Serv
         borderRightWidth={wide ? { md: "1px" } : undefined}
         borderColor={{ _light: pal.border.light, _dark: pal.border.dark }}
       >
-        <Box
-          position="absolute"
-          inset="0"
-          opacity={{ _light: 0.5, _dark: 0.35 }}
-          bgImage={`radial-gradient(${pal.icon[1]}33 1.2px, transparent 1.2px)`}
-          bgSize="16px 16px"
-          css={{ maskImage: "linear-gradient(to left, black 10%, transparent 75%)" }}
-        />
-        <Box
-          className="sc-glow"
-          position="absolute"
-          right="-10"
-          top="-10"
-          boxSize="36"
-          borderRadius="full"
-          bg={pal.icon[0]}
-          opacity={0.35}
-          filter="blur(36px)"
-        />
-        {/* Large faded icon in the background */}
-        <Box
-          className="sc-bgicon"
-          position="absolute"
-          right={{ base: "-4", md: "-2" }}
-          top="50%"
-          mt={{ base: "-14", md: "-16" }}
-          fontSize={{ base: "7.5rem", md: "8.5rem" }}
-          lineHeight="1"
-          color={{ _light: pal.icon[1], _dark: pal.icon[0] }}
-          opacity={0.2}
-          transform="rotate(-12deg)"
-          aria-hidden="true"
-        >
-          {serviceIcons[service.id]}
-        </Box>
+        {photo ? (
+          <>
+            {/* Real picture (decorative: the title says what the card is) */}
+            <Image
+              src={photo}
+              alt=""
+              fill
+              sizes={wide ? "(min-width: 768px) 460px, 100vw" : "(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"}
+              className="sc-photo"
+              style={{ objectFit: "cover", objectPosition: "center 40%" }}
+            />
+            {/* Darkens the bottom so the icon badge stands out */}
+            <Box position="absolute" inset="0" bgImage="linear-gradient(to top, rgba(10,8,30,.55), rgba(10,8,30,0) 55%)" />
+          </>
+        ) : (
+          <>
+            <Box
+              position="absolute"
+              inset="0"
+              opacity={{ _light: 0.5, _dark: 0.35 }}
+              bgImage={`radial-gradient(${pal.icon[1]}33 1.2px, transparent 1.2px)`}
+              bgSize="16px 16px"
+              css={{ maskImage: "linear-gradient(to left, black 10%, transparent 75%)" }}
+            />
+            <Box
+              className="sc-glow"
+              position="absolute"
+              right="-10"
+              top="-10"
+              boxSize="36"
+              borderRadius="full"
+              bg={pal.icon[0]}
+              opacity={0.35}
+              filter="blur(36px)"
+            />
+            {/* Large faded icon in the background */}
+            <Box
+              className="sc-bgicon"
+              position="absolute"
+              right={{ base: "-4", md: "-2" }}
+              top="50%"
+              mt={{ base: "-14", md: "-16" }}
+              fontSize={{ base: "7.5rem", md: "8.5rem" }}
+              lineHeight="1"
+              color={{ _light: pal.icon[1], _dark: pal.icon[0] }}
+              opacity={0.2}
+              transform="rotate(-12deg)"
+              aria-hidden="true"
+            >
+              {serviceIcons[service.id]}
+            </Box>
+          </>
+        )}
         <Box position="absolute" left={{ base: "5", md: "6" }} bottom={{ base: "5", md: "6" }}>
           <ServiceIcon id={service.id} className="sc-icon" />
         </Box>
